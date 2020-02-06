@@ -12,7 +12,7 @@ variable "rg_name" {
 
 
 # Create the resource group
-resource "azurerm_resource_group" "rg_playground" {
+resource "azurerm_resource_group" "Nicholas_Trifiletti" {
     name     = var.rg_name
     location = "eastus"
 
