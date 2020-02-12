@@ -13,8 +13,8 @@ variable "rg_name" {
 
 # Create the resource group
 resource "azurerm_resource_group" "rg_playground" {
-    name     = var.rg_name
-    location = "eastus"
+    name     = "Nicholas_Trifiletti"
+    location = "northcentralus"
 
     tags = {
         environment = "Terraform BWAF"
