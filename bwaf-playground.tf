@@ -13,7 +13,7 @@ variable "rg_name" {
 
 # Create the resource group
 resource "azurerm_resource_group" "rg_playground" {
-    name     = "Nicholas_Trifiletti"
+    name     = "Nicholas_Trifiletti_TEST"
     location = "northcentralus"
 
     tags = {
