@@ -14,7 +14,7 @@ variable "rg_name" {
 # Create the resource group
 resource "azurerm_resource_group" "rg_playground" {
     name     = "Nicholas_Trifiletti_TEST"
-    location = "northcentralus"
+    location = "eastus"
 
     tags = {
         environment = "Terraform BWAF"
@@ -187,7 +187,7 @@ resource "azurerm_storage_account" "sa_ubuntu" {
 
 data "azurerm_public_ip" "public_ip_bwaf" {
     name                = "${azurerm_public_ip.public_ip_bwaf.name}"
-    resource_group_name = var.rg_name
+    resource_group_name = Nicholas_Trifiletti_TEST
 }
 output "public_ip_address" {
     value = "${data.azurerm_public_ip.public_ip_bwaf.ip_address}"
